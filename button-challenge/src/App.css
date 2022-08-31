@@ -20,9 +20,16 @@ img, video, canvas, audio, iframe, embed, object  {
 }
 
 .left-navbar {
-  width: 237px;
+  max-width: 237px;
   height: 1234px;
   background-color: #FAFBFD;
+  margin-left: 48px;
+}
+
+@media (max-width: 50em){
+  .left-navbar {
+    margin-left: 5px;
+  }
 }
 
 #title {
@@ -32,7 +39,6 @@ img, video, canvas, audio, iframe, embed, object  {
   font-size: 14px;
   line-height: 20px;
   margin-top: 38px;
-  margin-left: 48px;
 }
 
 p > span {
@@ -40,7 +46,7 @@ p > span {
 }
 
 .navbar-text-container {
-  margin: 142px 48px;
+  margin-top: 142px;
 }
 
 .navbar-text {
@@ -55,3 +61,35 @@ p > span {
   font-weight: 700;
 }
 
+h3 {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 33px;
+  margin-top: 53px;
+}
+
+.button-container {
+  margin-left: 33px;
+  margin-top: 53px;
+}
+
+.main-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 50em){
+  .main-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+.button-div > p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #333333;
+}
